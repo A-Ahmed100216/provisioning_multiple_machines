@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo "export DB_HOST='192.168.10.2'" > /etc/profile.d/db_host.sh
 # Update the sources list
 sudo apt-get update -y
 
