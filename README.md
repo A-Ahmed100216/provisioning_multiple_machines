@@ -79,3 +79,7 @@ npm start
 cd test
 rake spec
 ```
+7. Check the app deployment:
+192.168.10.100:3000
+192.168.10.100:3000/fibonacci/3
+192.168.10.100:3000/posts
