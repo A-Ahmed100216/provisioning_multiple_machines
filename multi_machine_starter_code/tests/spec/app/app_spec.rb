@@ -18,7 +18,7 @@ describe package('nodejs') do
 end
 
 describe command('nodejs --version') do
-  its(:stdout) { should match /v6./ }
+  its(:stdout) { should match /v12./ }
 end
 
 describe package('pm2') do
@@ -30,5 +30,5 @@ describe package('git') do
 end
 
 describe command('git --version') do
-  its(:stdout) { should match /2\.7\../ }
+  its(:stdout) { should match /2\.17\../ }
 end
