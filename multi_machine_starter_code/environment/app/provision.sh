@@ -25,4 +25,3 @@ sudo apt-get install nginx -y
 sudo service nginx restart
 
 # cd /home/ubuntu/app
-# pm2 start app.js
