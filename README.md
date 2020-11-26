@@ -63,23 +63,23 @@ sudo service mongod restart
 sudo systemctl enable mongod
 mongo
 ```
-3. Add the following line to the app.js file
-`process.env.DB_HOST='192.168.10.2'`
+3. Run `vagrant up app` and `vagrant up db`
 
-4. Run `vagrant up app` and `vagrant up db`
-
-5. SSH into the virtual machine for the app and run the following commands.
-```
+4. SSH into the virtual machine for the app and run the following commands.
+```bash
+# Add DB_HOST variable to environment
+echo "export DB_HOST='192.168.10.2'" >> ~/.bashrc
+# Navigate to app location
 cd /home/ubuntu/app/
 npm install
 npm start
 ```
-6. Run tests
+5. Run tests
 ```
 cd test
 rake spec
 ```
-7. Check the app deployment:
+6. Check the app deployment:
 * 192.168.10.100:3000
 * 192.168.10.100:3000/fibonacci/3
 * 192.168.10.100:3000/posts

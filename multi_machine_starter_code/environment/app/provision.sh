@@ -1,5 +1,7 @@
 #!/bin/bash
-echo "export DB_HOST='192.168.10.2'" > /etc/profile.d/db_host.sh
+# Write to .bashrc our environment variable
+# echo "export DB_HOST='192.168.10.2'" >> ~/.bashrc
+
 # Update the sources list
 sudo apt-get update -y
 
@@ -21,3 +23,6 @@ sudo apt-get install nginx -y
 
 # finally, restart the nginx service so the new config takes hold
 sudo service nginx restart
+
+# cd /home/ubuntu/app
+# pm2 start app.js
