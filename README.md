@@ -7,9 +7,9 @@ The sample application has the ability to connect to a database. We need to prov
 Vagrant is capable of running two or more virtual machines at once with different configurations.
 
 ## Pre-Requisites
-1. GitHub
-2. Vagrantfile
-3. Virtual Box
+GitHub
+Vagrantfile
+Virtual Box
 
 ## Tasks
 * Research how to create a multi machine vagrant environment
@@ -17,7 +17,6 @@ Vagrant is capable of running two or more virtual machines at once with differen
 * Configure the db machine with a different IP from the app
 * Provision the db machine with a MongoDB database
 * You can test your database is working correctly by running the test suite in the test folder. There are two sets of tests. One for the app VM and one for the db VM. Make them all pass.
-
 
 ## Acceptance Criteria
 
